@@ -1,4 +1,4 @@
-# 32 Vanilla Js Projects Ideas for Beginners
+# :file_folder: 32 Vanilla Js Projects Ideas for Beginners
 
 Berisi list project untuk latihan Vanilla Javascript
 
@@ -15,8 +15,6 @@ Berisi list project untuk latihan Vanilla Javascript
 - [Stopwatch](#stopwatch)
 
 ## Daftar Project
-
-### Berita
 
 | Nama Project | Demo | Deskripsi 
 |:---------:|:---:|:-------:|
