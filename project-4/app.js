@@ -4,6 +4,8 @@ const body = document.getElementsByTagName('body');
 const btnChange = document.getElementById('changeIt');
 const numOpt = document.getElementById('numOpt');
 
+getOption();
+
 function getOption() {
   let selectOpt = document.getElementById('select').selectedIndex;
   let options = document.getElementsByTagName('option')[selectOpt].value;
