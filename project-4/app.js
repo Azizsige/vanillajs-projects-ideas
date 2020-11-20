@@ -1,6 +1,5 @@
 const button = document.getElementById('button');
 const text = document.getElementById('text');
-const body = document.getElementsByTagName('body');
 const btnChange = document.getElementById('changeIt');
 const numOpt = document.getElementById('numOpt');
 
@@ -18,6 +17,8 @@ function changeHex() {
 
   let body = document.body.style.backgroundColor = `#${hex}`;
   text.innerHTML = `#${hex}`;
+
+  if(hex > 000000) {}
 
   console.log(body);
 };
