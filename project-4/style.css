@@ -6,7 +6,25 @@
 body {
   height: 100vh;
   display: flex;
-  background-color: rgba(181, 141, 87, 0.8);
+  flex-direction: column;
+}
+
+select, #changeIt {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+}
+
+#changeIt {
+  top: 130px;
+}
+
+select:hover {
+  cursor: pointer;
 }
 
 main {
