@@ -7,23 +7,27 @@
   <title>#4 - Changing Background Color With Option</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <select name="" id="select">
-    <option class="option" value="(HEX)">HEX</option>
-    <option class="option" value="(RGB)">RGB</option>
-    <option class="option" value="(RGBA)">RGBA</option>
-  </select>
-  <button id="changeIt">Use that option</button>
-  <main>
-    <button id="button">Change Background Color <span id="numOpt"></span> </button>
-    <div class="box-text">
-      <h6 id="text">Color</h6>
+  <div class="container">
+    <div class="button-option">
+      <select name="" id="select">
+        <option class="option" value="(HEX)">HEX</option>
+        <option class="option" value="(RGB)">RGB</option>
+        <option class="option" value="(RGBA)">RGBA</option>
+      </select>
+      <button id="changeIt">Use that option</button>
     </div>
-  </main>
+    <main>
+      <button id="button">Change Background Color <span id="numOpt"></span> </button>
+      <div class="box-text">
+        <h6 id="text">Color</h6>
+      </div>
+    </main>
+  </div>
 
   <script src="app.js"></script>
 </body>
