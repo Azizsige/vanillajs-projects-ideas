@@ -13,6 +13,7 @@ Berisi list project untuk latihan Vanilla Javascript
 - [Sidebar](#sidebar)
 - [Countdown](#countdown)
 - [Stopwatch](#stopwatch)
+- [Clock](#clock)
 
 ## Daftar Project
 
@@ -24,6 +25,7 @@ Berisi list project untuk latihan Vanilla Javascript
 | Slideshow | --- | Auto Slider |
 | Count Down | --- | Penghitung Mundur |
 | Stopwatch | --- | Simple Stopwatch |
+| CLock | --- | Simple Analog CLock |
 
 
 ## Kontak
