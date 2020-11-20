@@ -19,7 +19,7 @@ Berisi list project untuk latihan Vanilla Javascript
 
 | Nama Project | Demo | Deskripsi 
 |:---------:|:---:|:-------:|
-| Changing Background Color | [Demo](#https://azizsige.github.io/vanillajs-projects-ideas) | Merubah Background Color Sesuai pilihan |
+| Changing Background Color | [Demo](https://azizsige.github.io/vanillajs-projects-ideas) | Merubah Background Color Sesuai pilihan |
 | Letter and Word Remaining Counter | --- | Realtime Menghitung Jumlah Huruf dan Angka Saat Input  |
 | Modal | --- | Simple Modal/Popup |
 | Slideshow | --- | Auto Slider |
