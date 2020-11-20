@@ -4,16 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>#1 - Changing Background Color ( Hex )</title>
+  <title>#4 - Changing Background Color With Option</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <select name="" id="select">
+    <option class="option" value="(HEX)">HEX</option>
+    <option class="option" value="(RGB)">RGB</option>
+    <option class="option" value="(RGBA)">RGBA</option>
+  </select>
+  <button id="changeIt">Use that option</button>
   <main>
-    <button id="button">Change Background Color ( Hex Number )</button>
-    <h6 id="text">Color</h6>
+    <button id="button">Change Background Color <span id="numOpt"></span> </button>
+    <div class="box-text">
+      <h6 id="text">Color</h6>
+    </div>
   </main>
 
   <script src="app.js"></script>
