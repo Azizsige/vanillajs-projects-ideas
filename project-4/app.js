@@ -4,7 +4,7 @@ const body = document.getElementsByTagName('body');
 const btnChange = document.getElementById('changeIt');
 const numOpt = document.getElementById('numOpt');
 
-getOption();
+numOpt.innerHTML = '';
 
 function getOption() {
   let selectOpt = document.getElementById('select').selectedIndex;
