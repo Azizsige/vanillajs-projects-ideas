@@ -50,11 +50,9 @@ function changeRgba() {
 let getBtn = btnChange.addEventListener('click', getOption)
 
 button.addEventListener('click', () => {
-  if (numOpt.innerText == "(HEX)") {
-    changeHex();
-  } else if (numOpt.innerText == '(RGB)') {
-    changeRgb();
-  } else if (numOpt.innerText == '(RGBA)') {
-    changeRgba();
-  }
+  if (numOpt.innerText == "(HEX)") return changeHex();
+  if (numOpt.innerText == '(RGB)') return changeRgb();
+  if (numOpt.innerText == '(RGBA)') return changeRgba();
+
+  return alert('Please select your option please!')
 })
