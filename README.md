@@ -4,8 +4,7 @@ Berisi list project untuk latihan Vanilla Javascript
 
 ## Daftar Isi
 
-- [Changing Background Color (Heksa Number)](#changing-background-color)
-- [Changing Background Color (RGB Number)](#changing-background-color)
+- [Changing Background Color (Hexa, Rgb & Rgba)](#changing-background-color)
 - [Letter and Word Remaining Counter](#letter-and-word-remaining-counter)
 - [Modal](#modal)
 - [Slideshow](#slideshow)
@@ -19,7 +18,7 @@ Berisi list project untuk latihan Vanilla Javascript
 
 | Nama Project | Demo | Deskripsi 
 |:---------:|:---:|:-------:|
-| Changing Background Color | --- | Merubah Background Color Saat Klik Tombol |
+| Changing Background Color | --- | Merubah Background Color Sesuai pilihan |
 | Letter and Word Remaining Counter | --- | Realtime Menghitung Jumlah Huruf dan Angka Saat Input  |
 | Modal | --- | Simple Modal/Popup |
 | Slideshow | --- | Auto Slider |

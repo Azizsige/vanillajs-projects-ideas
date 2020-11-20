@@ -9,7 +9,9 @@ function getOption() {
   let selectOpt = document.getElementById('select').selectedIndex;
   let options = document.getElementsByTagName('option')[selectOpt].value;
 
-  numOpt.innerHTML = `(${options})`;
+  numOpt.innerHTML = `${options}`;
+
+  console.log(options)
 }
 
 function changeHex() {
@@ -17,8 +19,6 @@ function changeHex() {
 
   let body = document.body.style.backgroundColor = `#${hex}`;
   text.innerHTML = `#${hex}`;
-
-  if(hex > 000000) {}
 
   console.log(body);
 };
@@ -51,9 +51,14 @@ function changeRgba() {
 let getBtn = btnChange.addEventListener('click', getOption)
 
 button.addEventListener('click', () => {
-  if (numOpt.innerText == "(HEX)") return changeHex();
-  if (numOpt.innerText == '(RGB)') return changeRgb();
-  if (numOpt.innerText == '(RGBA)') return changeRgba();
+  let selectOpt = document.getElementById('select').selectedIndex;
+  let options = document.getElementsByTagName('option')[selectOpt].value;
 
-  return alert('Please select your option please!')
+  if (numOpt.innerText === options) {
+    if (numOpt.innerText == "(HEX)") return changeHex();
+    if (numOpt.innerText == '(RGB)') return changeRgb();
+    if (numOpt.innerText == '(RGBA)') return changeRgba();
+  } else {
+    alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
+  }
 })
