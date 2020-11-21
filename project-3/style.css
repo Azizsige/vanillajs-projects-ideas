@@ -10,7 +10,7 @@ body {
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   background-color: #15151F;
-  color: #C6C7CA; 
+  color: #C6C7CA;
 }
 
 #show {
@@ -83,4 +83,106 @@ i.fa-twitter {
 i.fa-facebook-f {
   margin-right: .5em;
   color: #385C8E;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .modal {
+    background-color: #1A1D28;
+    width: 90%;
+    height: 18em;
+    position: fixed;
+    top: 8em;
+    left: 1em;
+    z-index: 100;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h6 {
+    margin-top: -1em;
+  }
+
+  #close span {
+    color: #4D5058;
+    font-size: 1.6em;
+    position: relative;
+    left: 4.7em;
+    top: -1.5em;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .modal {
+    background-color: #1A1D28;
+    width: 90%;
+    height: 18em;
+    position: fixed;
+    top: 8em;
+    left: 1em;
+    z-index: 100;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    padding: .3em;
+  }
+
+  h6 {
+    margin-top: -1em;
+  }
+
+  #close span {
+    color: #4D5058;
+    font-size: 1.6em;
+    position: relative;
+    left: 5.3em;
+    top: -1em;
+  }
+
+  button {
+    margin-left: 1em;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .modal {
+    background-color: #1A1D28;
+    width: 16em;
+    height: 18em;
+    position: fixed;
+    top: 8em;
+    left: 1em;
+    z-index: 100;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h6 {
+    margin-top: -1em;
+  }
+
+  #close span {
+    color: #4D5058;
+    font-size: 1.6em;
+    position: relative;
+    left: 4.1em;
+    top: -1.5em;
+  }
 }
