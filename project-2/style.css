@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
+}
+
+.container {
+  border: 1px solid #000;
+  width: 30em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  font-size: 2em;
+  margin-bottom: .7em;
+}
+
+.words, .letters {
+  font-size: 1em;
+}
+
+.words {
+  margin-bottom: .4em;
+}
+
+.letters {
+  margin-bottom: 1em;
+}
+
+.box-inputBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-inputBtn input {
+  width: 10.7em;
+  height: 1.5em;
+  padding-left: .5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: .7em;
+}
+
+.box-inputBtn button {
+  width: 5em;
+  height: 2em;
+  border: 1px solid transparent;
+  background-color: #000;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+
+}
+
+.box-inputBtn button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+}
