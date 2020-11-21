@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #15151F;
+  color: #C6C7CA; 
+}
+
+#show {
+  background-color: #1A1D28;
+}
+
+#show:hover {
+  cursor: pointer;
+}
+
+#close span {
+  color: #4D5058;
+  font-size: 2em;
+  position: relative;
+  left: 15.7em;
+  top: -2em;
+}
+
+#close span:hover {
+  cursor: pointer;
+}
+
+.modal.open {
+  transform: scale(1);
+  transition: all .4s ease-in-out;
+}
+
+.modal {
+  background-color: #1A1D28;
+  padding: 5em;
+  width: 470px;
+  position: fixed;
+  transform: scale(0);
+  top: 10em;
+  left: 12em;
+  z-index: 100;
+  transition: all .4s ease-in-out;
+}
+
+h6 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: -2em;
+  margin-bottom: 1em;
+}
+
+p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 3em;
+}
+
+button {
+  background-color: #15151F;
+  border: 1px solid transparent;
+  color: #C6C7CA;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: .9em;
+}
+
+i.fa-twitter {
+  margin-right: .5em;
+  color: #03A9F4;
+}
+
+i.fa-facebook-f {
+  margin-right: .5em;
+  color: #385C8E;
+}
