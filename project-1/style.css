@@ -78,9 +78,55 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  button {
+    width: 17em;
+    border-radius: 10px;
+  }
+
+  .box-text {
+    font-size: .7em;
+    text-align: center;
+    width: 16em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  button {
+    width: 17em;
+    border-radius: 10px;
+  }
+
+  .box-text {
+    font-size: .7em;
+    text-align: center;
+    width: 16em;
+  }
+}
+
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .container {
     display: flex !important;
     flex-direction: column !important;
+  }
+
+  button {
+    width: 17em;
+    border-radius: 10px;
+  }
+
+  .box-text {
+    font-size: .7em;
+    text-align: center;
+    width: 16em;
   }
 }
