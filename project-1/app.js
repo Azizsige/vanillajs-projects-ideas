@@ -5,6 +5,29 @@ const numOpt = document.getElementById('numOpt');
 
 numOpt.innerHTML = '';
 
+getRandom();
+
+function getRandom() {
+  let getRandomVal = Math.floor(Math.random() * 3);
+  let select = document.getElementById('select');
+  select.selectedIndex = getRandomVal;
+
+  if(select.value == '(HEX)') {
+    changeHex();
+  } else if (select.value == '(RGB)'){
+    changeRgb();
+  } else if(select.value == '(RGBA)'){
+    changeRgba();
+  }
+  
+  let options = document.getElementsByTagName('option')[getRandomVal].value;
+
+
+  numOpt.innerHTML = `${options}`;
+
+  console.log(options)
+}
+
 function getOption() {
   let selectOpt = document.getElementById('select').selectedIndex;
   let options = document.getElementsByTagName('option')[selectOpt].value;
