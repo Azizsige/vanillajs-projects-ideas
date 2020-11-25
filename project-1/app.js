@@ -5,21 +5,21 @@ const numOpt = document.getElementById('numOpt');
 
 numOpt.innerHTML = '';
 
-getRandom();
+getRandomColor();
 
-function getRandom() {
+function getRandomColor() {
   let getRandomVal = Math.floor(Math.random() * 3);
   let select = document.getElementById('select');
   select.selectedIndex = getRandomVal;
 
-  if(select.value == '(HEX)') {
+  if (select.value == '(HEX)') {
     changeHex();
-  } else if (select.value == '(RGB)'){
+  } else if (select.value == '(RGB)') {
     changeRgb();
-  } else if(select.value == '(RGBA)'){
+  } else if (select.value == '(RGBA)') {
     changeRgba();
   }
-  
+
   let options = document.getElementsByTagName('option')[getRandomVal].value;
 
 
@@ -38,7 +38,7 @@ function getOption() {
 }
 
 function changeHex() {
-  hex = Math.random().toString(16).slice(2, 8);
+  let hex = Math.random().toString(16).slice(2, 8);
 
   let body = document.body.style.backgroundColor = `#${hex}`;
   text.innerHTML = `#${hex}`;
@@ -70,6 +70,33 @@ function changeRgba() {
 
   console.log(body)
 };
+
+function getColor(color) {
+  let hex = Math.random().toString(16).slice(2, 8);
+  let red = Math.floor(Math.random() * 225);
+  let green = Math.floor(Math.random() * 225);
+  let blue = Math.floor(Math.random() * 225);
+  let alpha = Math.random().toFixed(1);
+
+  if (color == '(HEX)') {
+    let body = document.body.style.backgroundColor = `#${hex}`;
+    text.innerHTML = `#${hex}`;
+
+    console.log(body);
+  } else if (color == '(RGB)') {
+    let body = document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
+    text.innerHTML = body;
+
+    console.log(body)
+  } else if (color == '(RGBA)') {
+    let body = document.body.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+
+    text.innerHTML = body;
+
+    console.log(body)
+  }
+}
 
 let getBtn = btnChange.addEventListener('click', getOption)
 
