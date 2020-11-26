@@ -51,15 +51,10 @@ function getColor(color) {
 
     text.innerHTML = body;
 
-    console.log(body)
   }
 }
 
-btnChange.addEventListener('click', () => {
-  numOpt.innerHTML = `${select.value}`;
-
-  console.log(select)
-})
+btnChange.addEventListener('click', () => {numOpt.innerHTML = `${select.value}`})
 
 button.addEventListener('click', () => {
   if (numOpt.innerText === select.value) {
