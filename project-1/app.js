@@ -3,15 +3,15 @@ const text = document.getElementById('text');
 const btnChange = document.getElementById('changeIt');
 const numOpt = document.getElementById('numOpt');
 
+let getRandomVal = Math.floor(Math.random() * 3);
+let select = document.getElementById('select');
+select.selectedIndex = getRandomVal;
+
 numOpt.innerHTML = '';
 
 getRandomColor();
 
 function getRandomColor() {
-  let getRandomVal = Math.floor(Math.random() * 3);
-  let select = document.getElementById('select');
-  select.selectedIndex = getRandomVal;
-
   if (select.value == '(HEX)') {
     getColor(select.value);
   } else if (select.value == '(RGB)') {
@@ -22,15 +22,6 @@ function getRandomColor() {
 
   let options = document.getElementsByTagName('option')[getRandomVal].value;
 
-
-  numOpt.innerHTML = `${options}`;
-
-  console.log(options)
-}
-
-function getOption() {
-  let selectOpt = document.getElementById('select').selectedIndex;
-  let options = document.getElementsByTagName('option')[selectOpt].value;
 
   numOpt.innerHTML = `${options}`;
 
@@ -64,17 +55,18 @@ function getColor(color) {
   }
 }
 
-let getBtn = btnChange.addEventListener('click', getOption)
+btnChange.addEventListener('click', () => {
+  numOpt.innerHTML = `${select.value}`;
+
+  console.log(select)
+})
 
 button.addEventListener('click', () => {
-  let selectOpt = document.getElementById('select').selectedIndex;
-  let options = document.getElementsByTagName('option')[selectOpt].value;
-
-  if (numOpt.innerText === options) {
+  if (numOpt.innerText === select.value) {
     if (numOpt.innerText == "(HEX)") return getColor(numOpt.innerHTML);
     if (numOpt.innerText == '(RGB)') return getColor(numOpt.innerHTML);
     if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerHTML);
-  } else {
-    alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
   }
+
+  return alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
 })
