@@ -1,29 +1,38 @@
-const imgs = document.querySelectorAll('img');
+index = 1;
 
-let index = 0;
+showSlide(index);
 
-// setInterval(slide, 1000)
-
-function slide() {
-  let img = imgs[index];
-
-  if (index === imgs.length) {
-    index = 0;
-  } else {
-    imgs[index].classList.toggle('left');
-    index++;
-  }
-  console.log(img)
+function plusSlide(n){
+  showSlide(index = index + n);
 }
 
-// let index = 0;
+function currentSlide(n){
+  showSlide(index = n);
+}
 
-// setInterval(() => {
-//   if (index === 10) {
-//     index = 0;
-//   } else {
-//     index++
-//   }
+function showSlide(n){
+  let slides = document.getElementsByClassName('slide');
+  let dots = document.getElementsByClassName('dot');
 
-//   console.log(index);
-// }, 1000)
+  let i;
+
+  if(n < 1){
+    index = slides.length;
+  }
+
+  if(n > slides.length){
+    index = 1;
+  }
+
+  for(i = 0; i<slides.length; i++){
+    slides[i].style.display = "none"
+  }
+
+  for(i = 0; i<dots.length; i++){
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[index-1].style.display = "block";
+  dots[index-1].className += " active";
+
+}
