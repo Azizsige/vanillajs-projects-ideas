@@ -77,6 +77,4 @@ button.addEventListener('click', () => {
   } else {
     alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
   }
-
-  return alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
 })
