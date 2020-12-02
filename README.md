@@ -7,8 +7,8 @@ Berisi list project untuk latihan Vanilla Javascript
 - [Changing Background Color (Hexa, Rgb & Rgba)](#changing-background-color)
 - [Letter and Word Remaining Counter](#letter-and-word-remaining-counter)
 - [Modal](#modal)
-- [Slideshow](#slideshow)
 - [Image Slider](#image-slider)
+- [Slideshow](#slideshow)
 - [Client Testimonial Section](#client-testimonial-section)
 - [Sidebar](#sidebar)
 - [Countdown](#countdown)
@@ -22,10 +22,13 @@ Berisi list project untuk latihan Vanilla Javascript
 | Changing Background Color | [Preview](https://azizsige.github.io/vanillajs-projects-ideas/project-1/index.html) | Merubah Background Color Sesuai pilihan |
 | Letter and Word Remaining Counter | [Preview](https://azizsige.github.io/vanillajs-projects-ideas/project-2/index.html) | Realtime Menghitung Jumlah Huruf dan Angka Saat Input  |
 | Modal | [Preview](https://azizsige.github.io/vanillajs-projects-ideas/project-3/index.html) | Simple Modal/Popup |
+| Image Slider | --- | Image Slider with control |
 | Slideshow | --- | Auto Slider |
-| Count Down | --- | Penghitung Mundur |
+| Client Testimonial Section | --- | Client Testimonial Section Slider |
+| Sidebar | --- | Sidebar Using Vanilla Javascript |
+| Countdown | --- | Penghitung Mundur |
 | Stopwatch | --- | Simple Stopwatch |
-| CLock | --- | Simple Analog CLock |
+| Clock | --- | Simple Clock |
 
 
 ## Kontak
