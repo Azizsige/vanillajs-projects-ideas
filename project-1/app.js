@@ -27,18 +27,15 @@ function getRandomColor() {
   console.log(options)
 }
 
-<<<<<<< HEAD
-=======
-function getOption() {
-  let selectOpt = document.getElementById('select').selectedIndex;
-  let options = document.getElementsByTagName('option')[selectOpt].value;
+  function getOption() {
+    let selectOpt = document.getElementById('select').selectedIndex;
+    let options = document.getElementsByTagName('option')[selectOpt].value;
 
-  numOpt.innerHTML = `${options}`;
+    numOpt.innerHTML = `${options}`;
 
-  console.log(options)
-}
+    console.log(options)
+  }
 
->>>>>>> bunshin1
 function getColor(color) {
   let hex = Math.random().toString(16).slice(2, 8);
   let red = Math.floor(Math.random() * 225);
@@ -65,15 +62,11 @@ function getColor(color) {
   }
 }
 
-btnChange.addEventListener('click', () => {numOpt.innerHTML = `${select.value}`})
+btnChange.addEventListener('click', () => {
+  numOpt.innerHTML = `${select.value}`
+})
 
 button.addEventListener('click', () => {
-<<<<<<< HEAD
-  if (numOpt.innerText === select.value) {
-    if (numOpt.innerText == "(HEX)") return getColor(numOpt.innerHTML);
-    if (numOpt.innerText == '(RGB)') return getColor(numOpt.innerHTML);
-    if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerHTML);
-=======
   let selectOpt = document.getElementById('select').selectedIndex;
   let options = document.getElementsByTagName('option')[selectOpt].value;
 
@@ -83,7 +76,6 @@ button.addEventListener('click', () => {
     if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerText);
   } else {
     alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
->>>>>>> bunshin1
   }
 
   return alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
