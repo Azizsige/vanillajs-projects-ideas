@@ -22,19 +22,14 @@ function getRandomColor() {
   if (select.value == '(HEX)') return getColor(select.value);
   if (select.value == '(RGB)') return getColor(select.value);
   if (select.value == '(RGBA)') return getColor(select.value);
-
-
-  console.log(options)
 }
 
-  function getOption() {
-    let selectOpt = document.getElementById('select').selectedIndex;
-    let options = document.getElementsByTagName('option')[selectOpt].value;
+function getOption() {
+  let selectOpt = document.getElementById('select').selectedIndex;
+  let options = document.getElementsByTagName('option')[selectOpt].value;
 
-    numOpt.innerHTML = `${options}`;
-
-    console.log(options)
-  }
+  numOpt.innerHTML = `${options}`;
+}
 
 function getColor(color) {
   let hex = Math.random().toString(16).slice(2, 8);
@@ -45,20 +40,17 @@ function getColor(color) {
 
   if (color == '(HEX)') {
     let body = document.body.style.backgroundColor = `#${hex}`;
-    text.innerHTML = `#${hex}`;
+    text.innerHTML = body;
 
     console.log(body);
   } else if (color == '(RGB)') {
     let body = document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
     text.innerHTML = body;
-
-    console.log(body)
   } else if (color == '(RGBA)') {
     let body = document.body.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 
     text.innerHTML = body;
-
   }
 }
 
