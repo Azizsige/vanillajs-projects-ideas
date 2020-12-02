@@ -20,11 +20,9 @@ function getRemaining(){
 input.addEventListener('input', getRemaining);
 
 button.addEventListener('click', () => {
-  if(input.value == ''){
-    alert('Input is empty!');
-  }
-
   wordsEl.textContent = '0'
   lettersEl.textContent = '0';
   input.value = ''
+
+  if(input.value == '') return alert('Input is empty!');
 })
