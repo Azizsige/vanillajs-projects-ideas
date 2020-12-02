@@ -12,18 +12,13 @@ function getRandomColor() {
   let select = document.getElementById('select');
   select.selectedIndex = getRandomVal;
 
-  if (select.value == '(HEX)') {
-    getColor(select.value);
-  } else if (select.value == '(RGB)') {
-    getColor(select.value);
-  } else if (select.value == '(RGBA)') {
-    getColor(select.value);
-  }
-
   let options = document.getElementsByTagName('option')[getRandomVal].value;
+  numOpt.innerText = `${options}`;
 
+  if (select.value == '(HEX)') return getColor(select.value);
+  if (select.value == '(RGB)') return getColor(select.value);
+  if (select.value == '(RGBA)') return getColor(select.value);
 
-  numOpt.innerHTML = `${options}`;
 
   console.log(options)
 }
