@@ -12,22 +12,33 @@ numOpt.innerHTML = '';
 getRandomColor();
 
 function getRandomColor() {
-  if (select.value == '(HEX)') {
-    getColor(select.value);
-  } else if (select.value == '(RGB)') {
-    getColor(select.value);
-  } else if (select.value == '(RGBA)') {
-    getColor(select.value);
-  }
+  let getRandomVal = Math.floor(Math.random() * 3);
+  let select = document.getElementById('select');
+  select.selectedIndex = getRandomVal;
 
   let options = document.getElementsByTagName('option')[getRandomVal].value;
+  numOpt.innerText = `${options}`;
 
+  if (select.value == '(HEX)') return getColor(select.value);
+  if (select.value == '(RGB)') return getColor(select.value);
+  if (select.value == '(RGBA)') return getColor(select.value);
+
+
+  console.log(options)
+}
+
+<<<<<<< HEAD
+=======
+function getOption() {
+  let selectOpt = document.getElementById('select').selectedIndex;
+  let options = document.getElementsByTagName('option')[selectOpt].value;
 
   numOpt.innerHTML = `${options}`;
 
   console.log(options)
 }
 
+>>>>>>> bunshin1
 function getColor(color) {
   let hex = Math.random().toString(16).slice(2, 8);
   let red = Math.floor(Math.random() * 225);
@@ -57,10 +68,22 @@ function getColor(color) {
 btnChange.addEventListener('click', () => {numOpt.innerHTML = `${select.value}`})
 
 button.addEventListener('click', () => {
+<<<<<<< HEAD
   if (numOpt.innerText === select.value) {
     if (numOpt.innerText == "(HEX)") return getColor(numOpt.innerHTML);
     if (numOpt.innerText == '(RGB)') return getColor(numOpt.innerHTML);
     if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerHTML);
+=======
+  let selectOpt = document.getElementById('select').selectedIndex;
+  let options = document.getElementsByTagName('option')[selectOpt].value;
+
+  if (numOpt.innerText === options) {
+    if (numOpt.innerText == "(HEX)") return getColor(numOpt.innerText);
+    if (numOpt.innerText == '(RGB)') return getColor(numOpt.innerText);
+    if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerText);
+  } else {
+    alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
+>>>>>>> bunshin1
   }
 
   return alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
