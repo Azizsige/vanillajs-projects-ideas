@@ -13,11 +13,11 @@ function getRandomColor() {
   select.selectedIndex = getRandomVal;
 
   if (select.value == '(HEX)') {
-    changeHex();
+    getColor(select.value);
   } else if (select.value == '(RGB)') {
-    changeRgb();
+    getColor(select.value);
   } else if (select.value == '(RGBA)') {
-    changeRgba();
+    getColor(select.value);
   }
 
   let options = document.getElementsByTagName('option')[getRandomVal].value;
@@ -36,40 +36,6 @@ function getOption() {
 
   console.log(options)
 }
-
-function changeHex() {
-  let hex = Math.random().toString(16).slice(2, 8);
-
-  let body = document.body.style.backgroundColor = `#${hex}`;
-  text.innerHTML = `#${hex}`;
-
-  console.log(body);
-};
-
-function changeRgb() {
-  let red = Math.floor(Math.random() * 225);
-  let green = Math.floor(Math.random() * 225);
-  let blue = Math.floor(Math.random() * 225);
-
-  let body = document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-
-  text.innerHTML = body;
-
-  console.log(body)
-};
-
-function changeRgba() {
-  let red = Math.floor(Math.random() * 225);
-  let green = Math.floor(Math.random() * 225);
-  let blue = Math.floor(Math.random() * 225);
-  let alpha = Math.random().toFixed(1);
-
-  let body = document.body.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
-
-  text.innerHTML = body;
-
-  console.log(body)
-};
 
 function getColor(color) {
   let hex = Math.random().toString(16).slice(2, 8);
@@ -105,9 +71,9 @@ button.addEventListener('click', () => {
   let options = document.getElementsByTagName('option')[selectOpt].value;
 
   if (numOpt.innerText === options) {
-    if (numOpt.innerText == "(HEX)") return changeHex();
-    if (numOpt.innerText == '(RGB)') return changeRgb();
-    if (numOpt.innerText == '(RGBA)') return changeRgba();
+    if (numOpt.innerText == "(HEX)") return getColor(numOpt.innerText);
+    if (numOpt.innerText == '(RGB)') return getColor(numOpt.innerText);
+    if (numOpt.innerText == '(RGBA)') return getColor(numOpt.innerText);
   } else {
     alert('Your Choice Does Not Match Or You Have Not Chosen Your Choice, Please Try Again')
   }
